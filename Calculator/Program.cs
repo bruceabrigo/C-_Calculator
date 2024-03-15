@@ -38,10 +38,13 @@ namespace Calculator
                     result = Add(num1, num2);
                     break;
                 case '-':
+                    result = Subtract(num1, num2);
                     break;
                 case '*':
+                    result = Multiply(num1, num2);
                     break;
                 case '/':
+                    result = Divide(num1, num2);
                     break;
                 // default will return false operand
                 default:
@@ -62,6 +65,17 @@ namespace Calculator
         {
             return num1 + num2;
         }
-
+        static double Subtract(double num1, double num2)
+        {
+            return num1 - num2;
+        }
+        static double Multiply(double num1, double num2)
+        {
+            return num1 * num2;
+        }
+        static double Divide(double num1, double num2)
+        {
+            return num1 / num2;
+        }
     }
 }
